@@ -28,3 +28,11 @@ page = st.sidebar.radio("Paginas", list(Tabs.keys()))
 
 #carregando os dados
 df, X, y = load_data()
+
+#chamando a função para executar a pagina
+if page in ["Predicao", "Visualizacao"]:
+    Tabs[page].app(df, X, y)
+elif (page == "Dados"):
+    Tabs[page].app(df)
+else:
+    Tabs[page].app()
