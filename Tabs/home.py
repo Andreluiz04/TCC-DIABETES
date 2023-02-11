@@ -9,3 +9,10 @@ def app():
 
 	#adicionar uma imagem na pagina inicial
 	st.image("./Imagens/inicial.JFIF")
+
+	#Breve descrição do aplicativo sobre diabetes
+	 st.markdown(
+    """<p style="font-size:20px;">
+    
+    </p>
+    """, unsafe_allow_html=True)
