@@ -1,3 +1,5 @@
+#para executar utilizar a seguinte função: python -m streamlit run main.py
+
 import streamlit as st
 from web_functions import load_data
 from Tabs import home, data, predict, visualise
