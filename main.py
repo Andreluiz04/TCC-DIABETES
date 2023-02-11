@@ -10,10 +10,21 @@ st.set_page_config(
     initial_sidebar_state = 'auto'
 )
 
-Dicionario de Paginas
+#Dicionario de Paginas
 Tabs = {
     "Iniciar": home,
     "Dados": data,
     "Predicao": predict,
     "Visualizacao": visualise
+
 }
+
+#criando a barra lateral
+#adicionando um titulo para a barra lateral
+st.sidebar.title("Navegador")
+
+#criando a opção de radio para selecionar a pagina
+page = st.sidebar.radio("Paginas", list(Tabs.keys()))
+
+#carregando os dados
+df, X, y = load_data()
