@@ -4,7 +4,7 @@ import streamlit as st
 from web_functions import load_data
 from Tabs import home, data, predict, visualise
 
-#configurando o aplicativo
+# configurando o aplicativo
 st.set_page_config(
     page_title = 'TCC Sobre Diabetes',
     page_icon = 'random',
@@ -19,11 +19,9 @@ Tabs = {
     "Predicao": predict,
     "Visualizacao": visualise
 
-}
-
-#criando a barra lateral
-#adicionando um titulo para a barra lateral
-st.sidebar.title("Navegador")
+# Criando um subtitulo
+# Adicionando subtitulo na barra lateral
+st.sidebar.title("Navegaçao")
 
 #criando a opção de radio para selecionar a pagina
 page = st.sidebar.radio("Paginas", list(Tabs.keys()))
