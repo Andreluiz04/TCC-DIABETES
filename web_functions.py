@@ -24,7 +24,6 @@ def train_model(X, y):
             random_state=42, splitter='best'
         )
     model.fit(X, y)
-    # Get the model score
     score = model.score(X, y)
 
     return model, score
