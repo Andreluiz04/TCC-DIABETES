@@ -8,7 +8,6 @@ import streamlit as st
 def load_data():
     df = pd.read_csv('diabetes.csv')
 
-    # Perform feature and target split
     X = df[["GLCJejum","GLCalmoco", "Hipertensao","EspPele","Insulina", "IMC", "RelaGene", "Idade"]]
     y = df['Resultado']
 
