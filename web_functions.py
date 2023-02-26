@@ -1,3 +1,5 @@
+#importando modulos necessarios
+
 import numpy as np
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
@@ -6,7 +8,8 @@ import streamlit as st
 
 @st.cache()
 def load_data():
-    df = pd.read_csv('diabetes.csv')
+
+   df = pd.read_csv('diabetes.csv')
 
     X = df[["GLCJejum","GLCalmoco", "Hipertensao","EspPele","Insulina", "IMC", "RelaGene", "Idade"]]
     y = df['Resultado']

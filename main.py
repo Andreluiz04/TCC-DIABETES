@@ -17,7 +17,7 @@ Tabs = {
     "Iniciar": home,
     "Dados": data,
     "Predicao": predict,
-    "Visualizacao": visualise
+    "Visualizacao": visualise}
 
 # Criando um subtitulo
 # Adicionando subtitulo na barra lateral
